@@ -460,7 +460,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementsToBeVisible('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -468,7 +468,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementCount('', [
-            ${Array(numLines).fill("{ locator: , count: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , count: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -476,7 +476,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementCSS('', [
-            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -484,7 +484,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveText('', [
-            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -492,7 +492,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveAttribute('', [
-            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -500,7 +500,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveValue('', [
-            ${Array(numLines).fill("{ locator: , value: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , value: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -508,7 +508,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeEnabled('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -516,7 +516,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeDisabled('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -524,7 +524,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeChecked('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -532,7 +532,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeAttached('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -540,7 +540,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeEditable('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -548,7 +548,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeEmpty('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -556,7 +556,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeFocused('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -564,7 +564,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeHidden('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -572,7 +572,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToBeInViewport('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -580,7 +580,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToContainText('', [
-            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -588,7 +588,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveClass('', [
-            ${Array(numLines).fill("{ locator: , className: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , className: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -596,7 +596,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveId('', [
-            ${Array(numLines).fill("{ locator: , id: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , id: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -604,7 +604,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveJSProperty('', [
-            ${Array(numLines).fill("{ locator: , property: '', value: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , property: '', value: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -612,7 +612,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveScreenshot('', [
-            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -620,7 +620,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveScreenshotWithoutName('', [
-            ${Array(numLines).fill("{ locator: , screenshotName: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , screenshotName: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -628,7 +628,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveValues('', [
-            ${Array(numLines).fill("{ locator: , values: [''], nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , values: [''], nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -636,7 +636,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveAccessibleDescription('', [
-            ${Array(numLines).fill("{ locator: , description: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , description: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -644,7 +644,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveAccessibleName('', [
-            ${Array(numLines).fill("{ locator: , name: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , name: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
@@ -652,7 +652,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementToHaveRole('', [
-            ${Array(numLines).fill("{ locator: , role: '', nameSubStep: '' }").join(',\n        ')}
+            ${Array(numLines).fill("{ locator: , role: '', nameSubStep: '' }").join(',\n            ')}
         ]);
     }
 `;
