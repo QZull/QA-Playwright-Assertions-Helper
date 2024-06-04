@@ -5,7 +5,7 @@
   "repository": { "type": "git", "url": "https://github.com/QZull/QA-Playwright-Assertions-Helper.git" },
   "displayName": "QA Playwright Assertions Helper",
   "description": "An assistant in generating templates for Assertions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.89.0"
   },

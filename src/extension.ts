@@ -458,203 +458,203 @@ function generateTemplate(templateType: string, numLines: number): string {
     switch (templateType) {
         case 'toBeVisible | Проверка видимости элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementsToBeVisible('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementsToBeVisible('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveCount | Проверка количества элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementCount('', [
-        ${Array(numLines).fill("{ locator: , count: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementCount('', [
+            ${Array(numLines).fill("{ locator: , count: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveCSS | Проверка CSS-свойств элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementCSS('', [
-        ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementCSS('', [
+            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveText | Проверка текста элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveText('', [
-        ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveText('', [
+            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveAttribute | Проверка атрибута элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveAttribute('', [
-        ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveAttribute('', [
+            ${Array(numLines).fill("{ locator: , name: '', value: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveValue | Проверка значения элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveValue('', [
-        ${Array(numLines).fill("{ locator: , value: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveValue('', [
+            ${Array(numLines).fill("{ locator: , value: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeEnabled | Проверка, что элементы включены':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeEnabled('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeEnabled('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeDisabled | Проверка, что элементы отключены':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeDisabled('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeDisabled('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeChecked | Проверка, что элементы отмечены':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeChecked('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeChecked('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeAttached | Проверка, что элементы прикреплены':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeAttached('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeAttached('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeEditable | Проверка, что элементы редактируемы':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeEditable('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeEditable('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeEmpty | Проверка, что элементы пустые':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeEmpty('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeEmpty('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeFocused | Проверка, что элементы сфокусированы':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeFocused('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeFocused('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeHidden | Проверка, что элементы скрыты':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeHidden('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeHidden('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toBeInViewport | Проверка, что элементы находятся в области видимости':
             return `
-async expectYourFunctionName() {
-    await expectElementToBeInViewport('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToBeInViewport('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toContainText | Проверка содержимого текста элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToContainText('', [
-        ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToContainText('', [
+            ${Array(numLines).fill("{ locator: , text: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveClass | Проверка класса элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveClass('', [
-        ${Array(numLines).fill("{ locator: , className: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveClass('', [
+            ${Array(numLines).fill("{ locator: , className: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveId | Проверка идентификатора элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveId('', [
-        ${Array(numLines).fill("{ locator: , id: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveId('', [
+            ${Array(numLines).fill("{ locator: , id: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveJSProperty | Проверка JS-свойства элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveJSProperty('', [
-        ${Array(numLines).fill("{ locator: , property: '', value: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveJSProperty('', [
+            ${Array(numLines).fill("{ locator: , property: '', value: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveScreenshot | Проверка скриншота элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveScreenshot('', [
-        ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveScreenshot('', [
+            ${Array(numLines).fill("{ locator: , nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveScreenshot(name) | Проверка скриншота элементов с именем':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveScreenshotWithoutName('', [
-        ${Array(numLines).fill("{ locator: , screenshotName: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveScreenshotWithoutName('', [
+            ${Array(numLines).fill("{ locator: , screenshotName: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case 'toHaveValues | Проверка значений элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveValues('', [
-        ${Array(numLines).fill("{ locator: , values: [''], nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveValues('', [
+            ${Array(numLines).fill("{ locator: , values: [''], nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case '(v.1.44) toHaveAccessibleDescription | Проверка доступного описания элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveAccessibleDescription('', [
-        ${Array(numLines).fill("{ locator: , description: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveAccessibleDescription('', [
+            ${Array(numLines).fill("{ locator: , description: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case '(v.1.44) toHaveAccessibleName | Проверка доступного имени элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveAccessibleName('', [
-        ${Array(numLines).fill("{ locator: , name: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
-`;
+    async expectYourFunctionName() {
+        await expectElementToHaveAccessibleName('', [
+            ${Array(numLines).fill("{ locator: , name: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
+    `;
         case '(v.1.44) toHaveRole | Проверка роли элементов':
             return `
-async expectYourFunctionName() {
-    await expectElementToHaveRole('', [
-        ${Array(numLines).fill("{ locator: , role: '', nameSubStep: '' }").join(',\n        ')}
-    ]);
-}
+    async expectYourFunctionName() {
+        await expectElementToHaveRole('', [
+            ${Array(numLines).fill("{ locator: , role: '', nameSubStep: '' }").join(',\n        ')}
+        ]);
+    }
 `;
         default:
             return '';
