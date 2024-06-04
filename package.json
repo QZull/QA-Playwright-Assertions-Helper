@@ -1,7 +1,8 @@
 {
   "name": "assertionshelp",
   "publisher": "QZull",
-  "icon": "icon/playwright.png",
+  "icon": "icon/playwright.png", 
+  "repository": { "type": "git", "url": "https://github.com/QZull/QA-Playwright-Assertions-Helper.git" },
   "displayName": "QA Playwright Assertions Helper",
   "description": "An assistant in generating templates for Assertions",
   "version": "0.0.1",
