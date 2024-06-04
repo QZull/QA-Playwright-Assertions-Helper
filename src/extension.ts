@@ -468,7 +468,7 @@ function generateTemplate(templateType: string, numLines: number): string {
             return `
     async expectYourFunctionName() {
         await expectElementCount('', [
-            ${Array(numLines).fill("{ locator: , count: '', nameSubStep: '' }").join(',\n            ')}
+            ${Array(numLines).fill("{ locator: , count: , nameSubStep: '' }").join(',\n            ')}
         ]);
     }
     `;
